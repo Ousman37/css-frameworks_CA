@@ -1,0 +1,57 @@
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+
+
+$blue:    #78217d ;
+$indigo:  #10f2e7 ;
+$purple:  #1a0754 ;
+$pink:    #d63384 ;
+$red:     #8a0e4c ;
+$orange:  #582c07d4 ;
+$yellow:  #ffc107 ;
+$green:   #198754 ;
+$teal:    #20c997 ;
+$cyan:    #0b4955 ;
+
+$primary:       $blue ;
+$secondary:     $gray-600 ;
+$success:       $green ;
+$info:          $cyan ;
+$warning:       $yellow ;
+$danger:        $red ;
+$light:         $gray-100 ;
+$dark:          $gray-900 ;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) ;
+
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) ;
+
+$border-radius:        0;
+$border-radius-sm:     0;
+$border-radius-lg:     0;
+$border-radius-xl:     0;
+$border-radius-2xl:    0;
+$border-radius-pill:   0;
