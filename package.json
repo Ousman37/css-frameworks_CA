@@ -1,0 +1,31 @@
+{
+  "name": "social-media-app",
+  "version": "0.0.1",
+  "description": "Social media app CA Noroff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ousman37/css-frameworks_CA.git"
+  },
+  "keywords": [
+    "Social",
+    "media",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Ethmane Didi <ousman.didibela@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ousman37/css-frameworks_CA/issues"
+  },
+  "homepage": "https://github.com/Ousman37/css-frameworks_CA#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.55.0"
+  }
+}
