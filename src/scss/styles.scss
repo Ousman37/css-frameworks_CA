@@ -150,10 +150,7 @@ body{
 }
 
 
-.alert-danger{
-  color: red;
-  
-}
+
 
 .mt-5 {
   margin-top: 2rem !important;
@@ -168,20 +165,5 @@ small, .small {
 
 
 
-.alert {
- 
-  --bs-alert-padding-x: 1rem;
-  --bs-alert-padding-y: 1rem;
-  --bs-alert-margin-bottom: 1rem;
-  
-  --bs-alert-border-color: transparent;
-  --bs-alert-border: 1px solid $alert-border-color !important;
-  --bs-alert-border-radius: 0;
-  
-  color: var(--bs-alert-color);
-  background-color: var(--bs-alert-bg);
-  border: var(--bs-alert-border);
-  border-radius: var(--bs-alert-border-radius);
-}
 
  
