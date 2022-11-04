@@ -2,7 +2,15 @@
 /*
 @import "header";*/
 
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+
 
 
 .bg-gray {
@@ -124,4 +132,16 @@
     bottom: 0;
     width: 100%;
   }
+}
+
+.bg-light {
+  background-color: #f0f2f5 !important;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.btn-link {
+  text-decoration: none;
 }
