@@ -10,7 +10,9 @@ body{
   font-family: "Roboto", sans-serif;
 }
 
-
+.mt-5 {
+  margin-top: -10rem !important;
+}
 
 
 .bg-gray {
@@ -132,6 +134,7 @@ body{
     bottom: 0;
     width: 100%;
   }
+ 
 }
 
 .bg-light {
@@ -145,3 +148,15 @@ body{
 .btn-link {
   text-decoration: none;
 }
+
+
+.alert-danger{
+  color: red;
+}
+
+.mt-5 {
+  margin-top: 2rem !important;
+}
+
+
+ 
