@@ -40,7 +40,7 @@
           <div class="form-group">
               <label for="password" class="form-control">Password</label>
               <input title=" Must be at least 8 characters" pattern="[a-zA-Z0-9]{8,}"  class="form-control" required type="text" id="password" />
-                 <p class="input-hint"> Must be at least 8 characters</p>
+                 <p class="alert alert-danger"> Must be at least 8 characters</p>
           </div>
      
       
@@ -49,8 +49,9 @@
           <a href="#" class="text-decoration-none text-center">
             <p>Forgotten password?</p>
           </a>
-</form>
+      
       </div>
+      </form>
       
         <!-- !create form -->
         <hr />
@@ -58,7 +59,7 @@
           <button class="btn btn-success btn-lg text-light" type="button" data-bs-toggle="modal"
             data-bs-target="#createModal">Create New Account</button>
         </div>
-        </fieldset>
+        
         </form>
         <!-- create modal -->
         <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
@@ -86,8 +87,12 @@
                     </div>
                   </div>
                   <!-- !email & pass -->
-                  <input type="email" class="form-control my-3" placeholder="Mobile number or email address" required/>
-                  <input type="password" class="form-control my-3" placeholder="New password" required/>
+                  <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" required type="email" class="form-control"
+                    title="Must be a valid email address" placeholder="name@example.com or phone number" />
+
+                    <input title=" Must be at least 8 characters" pattern="[a-zA-Z0-9]{8,}" class="form-control" required type="text"
+                      id="password" />
+                    <p class="alert alert-danger"> Must be at least 8 characters</p>
                   <!-- !DOB -->
                   <div class="row my-3">
                     <span class="text-muted fs-7">Date of birth <i class="fas fa-question-circle"
