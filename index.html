@@ -13,25 +13,28 @@
 
 
 <body class="bg-gray">
+
+
   <!--! Login -->
-  <div class="container mt-5 pt-5 d-flex flex-column flex-lg-row justify-content-evenly">
+  <div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
     <!--! heading -->
-    <div class="text-center text-lg-start mt-0 pt-0 mt-lg-5 pt-lg-5">
+    <div class="text-center text-lg-start  mt-lg-5 pt-lg-5">
       <a href="/feed.html"><button class="btn btn-primary w-50 my-1 text-light">Back to home </button></a>
       <h1 class="text-primary fw-bold fs-0">Inbound Media</h1>
       <p class="w-75 mx-auto fs-4 mx-lg-0">Inbound Media helps you connect and share with the people in your life.</p>
       
     </div>
     <!-- !form card -->
-    <div style="max-width: 28rem; width: 100%">
+    
+      <div class="my-custom-class mt-0">
       <!-- !login form -->
       <!-- !first was form tag -->
-      <div class="bg-white shadow rounded p-3 input-group-lg">
-      <form>
+      <div class="bg-white shadow rounded p-3 input-group-lg ">
+    <form action="/profile.html">
         <div class="form-group">
           <label for="email">Email</label>
           <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}"   id="email" required   type="email"  class="form-control"   title="Must be a valid email address" 
-           placeholder="name@example.com or phone number"/>
+           placeholder="name@example.com"/>
       
           </div>
           
@@ -45,7 +48,7 @@
      
       
        
-          <a href="/feed.html"><button class="btn btn-primary w-100 my-3 text-light">Log In</button></a>
+          <button class="btn btn-primary w-100 my-3 text-light">Log In</button>
           <a href="#" class="text-decoration-none text-center">
             <p>Forgotten password?</p>
           </a>
