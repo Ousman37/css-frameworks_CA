@@ -25,18 +25,44 @@
       <!-- !login form -->
       <!-- !first was form tag -->
       <div class="bg-white shadow rounded p-3 input-group-lg">
-        <input type="email" class="form-control my-3" placeholder="Email address or phone number" />
-        <input type="password" class="form-control my-3" placeholder="Password" />
-        <a href="/feed.html"><button class="btn btn-primary w-100 my-3">Log In</button></a>
-        <a href="#" class="text-decoration-none text-center">
-          <p>Forgotten password?</p>
-        </a>
+ 
+     
+  <fieldset>
+  <form method="post" class="contact-from form" id="search-dummy">
+    <legend> USERNAME* </legend>
+    <label for="regex1">your username</label>
+    <input type="text" class="form-control" id="regex1" aria-describedby="regex1help" pattern="^[a-z0-9_-]{3,16}$" required
+      placeholder="name@example.com or phone number"
+      title="3-16 character username containing only lowercase letters, numbers, underscore and hyphen" />
+
+    <small class="alert-danger" id="regex1help">Make sure your username matches is between three and sixteen
+      characters, using only numbers, letters, hyphens and
+      underscores.</small>
+
+      <div class="form-group">
+          <input type="password" class="form-control my-3"  id="regex2" aria-describedby="regex1help" pattern="^[A-Za-z0-9!@#$%^&*()\-_=+{};:, !>.>]${12,20})
+        (?=(?:.*[a-z]){2,}) (?=(?:.*\d){2,})" placeholder="password" required>
+
+        <small class="alert-danger" id="regex1help"> # 2 upper case letters # 2 lower case letters dont allow
+          more than 2 repeating characters # length 12-20, only above char classes (disallow spaces) # 2 digits # 2
+          special characters # negative lookahead," $ # end of line</small>
+          
+       
+          <a href="/feed.html"><button class="btn btn-primary w-100 my-3 text-light">Log In</button></a>
+          <a href="#" class="text-decoration-none text-center">
+            <p>Forgotten password?</p>
+          </a>
+
+      </div>
+      
         <!-- !create form -->
         <hr />
         <div class="text-center my-4">
-          <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
+          <button class="btn btn-success btn-lg text-light" type="button" data-bs-toggle="modal"
             data-bs-target="#createModal">Create New Account</button>
         </div>
+        </fieldset>
+        </form>
         <!-- create modal -->
         <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
@@ -49,6 +75,7 @@
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+              
               <!-- !body -->
               <div class="modal-body">
                 <form>
